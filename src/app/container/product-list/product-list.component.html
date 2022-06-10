@@ -1,0 +1,14 @@
+<div *ngFor="let item of plist">
+    <app-product [data]="item"></app-product>
+</div>
+
+<div [ngSwitch]="day">
+<p *ngSwitchCase="'1'">Sunday</p>
+<p *ngSwitchCase="'2'">Monday</p>
+<p *ngSwitchCase="'3'">Tuesday</p>
+<p *ngSwitchCase="'4'">Wednesday</p>
+<p *ngSwitchCase="'5'">Thursday</p>
+<p *ngSwitchCase="'6'">Friday</p>
+<p *ngSwitchCase="'7'">Saturday</p>
+<p *ngSwitchDefault>NO Day !</p>
+</div>

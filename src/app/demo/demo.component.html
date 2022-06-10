@@ -1,0 +1,11 @@
+<h1>One Way Binding</h1>
+<h3> String interpolation </h3>
+<p>{{demoData}}</p>
+<p>{{demoData.toUpperCase()}}</p>
+<p>{{8+9}}</p>
+<input type="text" value="{{demoData}}"/>
+<input type="text" [value]="demoData"/>
+<button (click)="showAlert()">click me</button>
+
+<h1>Two way Data Binding</h1>
+<input type="text" [(ngModel)]="demoData"/>

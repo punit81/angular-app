@@ -1,0 +1,7 @@
+<img [src]='data.productImage'/>
+<p>Id: {{data.productId}}</p>
+<p>Name:{{data.productName}}</p>
+<p>Price:{{data.productPrice}}</p>
+<button *ngIf="data.productStock>0; else stock">Add to Cart</button>
+
+<ng-template #stock>Out Of Stock !</ng-template>
